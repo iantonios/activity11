@@ -6,7 +6,7 @@ import requests
 st.title('House price estimator')
 
 # retrieve IP address from 
-VM_IP = st.secrets('VM_IP')
+VM_IP = st.secrets['VM_IP']
 
 with st.form(key='my_form'):
     bedrooms = st.slider('Bedrooms', 0, 20, 3)
